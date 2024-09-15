@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+
+            body {
+               font-family: "sofia", sans-serif; 
+            }
+
+            .nav-links {
+                background-color: black;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: white;
+                padding: 2px 10px;
+                transition: color 1s, background-color 1s;
+            }
+
+            .nav-links a:hover {
+                background-color: white;
+                font-weight: bold;
+                color: black;
+            }
+
+            @media screen and (max-width: 500px) {
+                .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .nav-links a {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                .discount {
+                    font-size: 8px;
+                }
+
+                .add-button {
+                    font-size: 8px;
+                    bottom: 10px;
+                }
+            }
+
+            .main-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 33.3%;
+            }
+
+            .main-container img {
+                width: 100%;
+            }
+
+            .discount {
+                background-color: black;
+                color: white;
+                padding: 2px 4px;
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+
+            .transparent {
+                background-color: white;
+                width: 100%;
+                height: 30%;
+                position: absolute;
+                bottom: 0;
+                opacity: 0.4;
+            }
+
+            .add-button {
+                position: absolute;
+                bottom: 30px;
+                background-color: white;
+                padding: 4px 8px;
+            }
+
+            @media screen and (max-width: 700px) {
+                .add-button {
+                    font-size: 10px;
+                    padding: 2px 4px;
+                    bottom: 20px;
+                }
+
+                .discount {
+                    font-size: 10px;
+                }
+            }
+
+            /* add more @media Queries to give the wedpage a better look on smaller screens */
+        </style>
+    </head>
+    <body>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            <a href="#">Reports</a>
+        </div>
+
+        <div class="main-container">
+            <img src="https://www-konga-com-res.cloudinary.com/w_400,f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/H/Y/172736_1631619731.jpg" alt="">
+            <div class="discount">20% off</div>
+            <div class="transparent"></div>
+            <button class="add-button">Add to cart</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions Basics</title>
+    </head>
+    <body>
+        <h1>JavaScript functions</h1>
+        <script>
+            let x = 5;
+            let y = 6;
+
+            let result = x * y;
+            console.log(result);
+
+            //we can replace the code above using a function
+
+            function product () {
+                let x = 5;
+                let y = 6;
+
+                let result = x * y;
+                console.log(result);
+            }
+
+            //to use a function we have to "Call the function". 
+
+            product();
+
+            //functions with parameters x, y 
+            function productAny2Numbers (x, y) {
+                return x * y;
+            }
+            //view browser console to see result
+            console.log(productAny2Numbers(5, 6));
+
+        </script>
+    </body>
+</html>

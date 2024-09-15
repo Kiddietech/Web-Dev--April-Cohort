@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+
+    <style>
+     
+      .div1 {
+        width: 300px;
+        height: 100px;
+        padding: 20px;
+        background-color: pink;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      .div2 {
+        width: 300px;
+        height: 100px;
+        padding: 20px;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>Div1 has the property <b>box-sizing: border-box</b> while Div2 does not. <br>It can be seen that  both elements have the same properties such as width, height and padding.but then, Div1 is smaller in size. <br>Generally, web developers style all elements on the webpage using the CSS Syntax below;<br> <br> * {<br>box-sizing: border-box;<br>}</p>
+
+    <div class="div1">Div1</div>
+    
+    <div class="div2">Div2</div>
+  </body>
+</html>

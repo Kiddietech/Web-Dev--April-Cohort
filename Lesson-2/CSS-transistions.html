@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistions</title>
+    <style>
+      .main-box {
+        width: 500px;
+        height: 200px;
+      }
+
+      .box {
+        width: 100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        transition: 2s;
+        margin-bottom: 30px;
+      }
+
+      .box:hover {
+        width: 200px;
+        font-size: 50px;
+        background-color: darkgreen;
+        color: yellow;
+        transform: rotate(360deg);
+      }
+
+      input[type="text"] {
+        width: 50%;
+        transition: 5s;
+      }
+
+      input[type="text"]:focus {
+        /* background-color: black;
+        color: yellow; */
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="main-box">
+      <div class="box">CSS</div>
+    </div>
+  
+    <input type="text" placeholder="type in a sentence">
+    
+  </body>
+</html>

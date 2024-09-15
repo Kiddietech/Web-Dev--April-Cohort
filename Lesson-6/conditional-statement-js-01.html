@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>if statements</title>
+    </head>
+    <body>
+        <h1>Web Driver license age verification software</h1>
+        <div class="display" style="color:white; background-color: red; padding: 10px;"></div>
+
+        <script>
+            const age = 15;
+            let AniekanAge;
+            let name = 'jola';
+
+            const showResult = document.querySelector('.display');
+            const elementToDisplay = document.createElement('div');
+
+            // if (truthy/falsy) {
+            //     code execute if condition is true
+            // } else {
+            //     code executes if condition is false
+            //}
+            AniekanAge = 30; 
+
+            if (AniekanAge > age) {
+                elementToDisplay.textContent = `${name}; you have qualified to get the license`;
+                showResult.appendChild(elementToDisplay);
+            } 
+            else if (AniekanAge == age) {
+                elementToDisplay.textContent = `${name}; Please, wait a few months`;
+                showResult.appendChild(elementToDisplay);
+            } 
+            else {
+                elementToDisplay.textContent = `${name}; you do not qualify to get the license`;
+                showResult.appendChild(elementToDisplay);
+            }
+        </script>
+    </body>
+</html>

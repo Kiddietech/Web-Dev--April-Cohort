@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      main {
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      #subscribe-button {
+        padding: 5px 10px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        margin-right: 20px;
+        transition: color 1s, background-color 1s;
+      }
+
+      #subscribe-button:hover {
+        background-color: white;
+        color: red;
+      }
+
+      #subscribe-button:focus {
+        background-color: rgb(12, 12, 12);
+        color: white;
+      }
+
+      #follow-button {
+        padding: 5px 10px;
+        font-size: 20px;
+        background-color: rgb(37, 121, 231);
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+
+      #follow-button:hover {
+        opacity: 0.5;
+      }
+
+      #anchor {
+        display: block;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      #anchor:link {
+        color: green;
+      }
+
+      #anchor:visited {
+        color: black;
+      }
+
+      #anchor:hover {
+        color: blue;
+      }
+      
+      #anchor:active {
+        color: red;
+      }
+      
+      #box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+        background-color: darkgreen;
+        transition: width 2s, height 2s, background-color 1s;
+      }
+
+      #box:hover {
+        width: 300px;
+        height: 300px;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Pseudo-selectors in CSS, also known as pseudo-classes, are keywords added to selectors that specify a special state of the selected elements.
+    </h1>
+
+    <h2>Pseudo-classes are a powerful feature in CSS that enable you to create dynamic and interactive user experiences without JavaScript.</h2>
+
+    <h4>Below we can see some examples of elements styled using the pseudo-classes</h4>
+
+    <main>
+      <button id="subscribe-button">Subscribe</button>
+
+      <button id="follow-button">follow</button>
+
+      <a href="#" id="anchor" target="_blank">click me, I`m a link</a>
+      <a href="#" id="anchor">click me, I`m a link</a>
+      <a href="#" id="anchor">click me, I`m a link</a>
+
+      <p>
+        The <b>:link</b> selector is used to select unvisited links.
+        Use the <b>:visited</b> selector to style links to visited pages, the <b>:hover</b> selector to style links when you mouse over them, and the <b>:active</b> selector to style links when you click on them.
+      </p>
+
+      <h3>mouse over the box below</h3>
+      <div id="box"></div>
+
+    </main>
+  </body>
+</html>

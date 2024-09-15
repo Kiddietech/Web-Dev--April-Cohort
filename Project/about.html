@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e-commerce webpage</title>
+        <link rel="stylesheet" href="stylesheets/general~styles.css">
+        <link rel="stylesheet" href="stylesheets/Header~styles.css">
+        <link rel="stylesheet" href="stylesheets/main~body~styles.css">
+        <link rel="stylesheet" href="stylesheets/hero~styles.css">
+        <link rel="stylesheet" href="stylesheets/footer~styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <style>
+            .main p::first-letter {
+                color: red;
+                font-size: 20px;
+            }
+
+            .main p {
+                text-align: center;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav" id="nav">
+                <div class="nav-details">
+                    <div class="details">
+                        <i class="ri-bank-line logo"></i>
+                        <div class="name">
+                            <h1 class="business-name">
+                                Kiddie Tech~ville
+                            </h1>
+                            <p>e-commerce webpage</p>
+                        </div>
+                    </div>
+    
+                    <div class="nav-icon" id="nav-icon">
+                        <i class="ri-menu-line burger"></i>
+                        <i class="ri-close-line close"></i>
+                    </div>
+                </div>
+
+                <div class="menu" id="menu">
+                    <ul class="menu-lists">
+                        <li class="nav-menu">
+                            <a href="home.html" target="_blank" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-menu">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        
+                        <li class="nav-menu">
+                            <a href="#" target="_blank" class="nav-link">Shop</a>
+                        </li>
+
+                        <li class="nav-menu">
+                            <a href="#" target="_blank" class="nav-link">Company Policy</a>
+                        </li>
+                        
+                        <li class="nav-menu">
+                            <a href="#" target="_blank" class="nav-link">Contact</a>
+                        </li>
+                        
+                        <li class="nav-menu" id="cart-menu">
+                            <i class="ri-shopping-cart-line Cart"></i>
+                            <div class="cart-number" id="cart-number"></div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main" id="main">
+            <h1>About Kiddie Tech-ville</h1>
+            <p>At <strong>Kiddie Tech-ville</strong>, we believe in making coding and robotics education accessible and affordable for children across Africa. <br>
+                We partner with schools to create tech clubs that inspire and engage students. <br>
+                We are passionate about equipping the next generation with the skills they need to succeed in the digital world. <br>
+                We provide robotics hardware kits with affordable, flexible installment plans for accessibility. <br>
+                And mobile-optimized, bite-sized lessons as well as interactive coding environments for seamless learning on the go. <br>
+                Through our online classes, we bring quality tech education right to your home. <br>
+                Our holiday classes provide intensive, hands-on learning experiences that make technology fun and exciting.
+            </p>
+            <h1>Our Mission</h1>
+            <p>
+                Our mission is to create a generation of innovators and problem solvers who will drive Africa forward.
+            </p>
+        </section>
+
+        <footer class="footer">
+
+            <div class="contact">
+                <a href="" target="_blank">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+
+                <a href="" target="_blank">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+
+                <a href="" target="_blank">
+                    <i class="ri-mail-line"></i>
+                </a>
+
+                <a href="" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </div>
+
+            
+            <div class="services" id="services">
+                <span>Services</span>
+                <ol>
+                    <li>Online retail</li>
+                    <li>Free shipping</li>
+                    <li>Home Delivery</li>
+                    <li>Credit payment</li>
+                    <li>E-payment</li>
+                </ol>
+            </div>
+
+            <div class="copyright">
+                <div class="copyright-container">Copyrights &copy; 2024 <span>Kiddie Tech-ville</span></div>
+                <div class="more-tabs">
+                    <a href="about.html">About Us</a>
+                    <a href="#" target="_blank">Privacy</a>
+                    <a href="#" target="_blank">License</a>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

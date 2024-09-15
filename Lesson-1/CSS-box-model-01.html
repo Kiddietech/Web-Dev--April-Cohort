@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div {
+        padding: 50px;
+        margin: 20px;
+        border: 20px solid #ff0000;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box model</h1>
+
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: <b>content, padding, borders & margins</b>.</p>
+
+    <p>The image below illustrates the box model:</p>
+
+    <div>
+      This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. 
+        <p>
+          The CSS box model is essentially a box that wraps around every HTML element. It consists of: <b>content, padding, borders & margins</b>.
+        </p>
+    </div>
+
+    <p>
+      Some HTML elements like the paragraph element, headers h1-h6 elements have margin wrapping around them by default. You must remember this when working with these elements. There will be scenarios where a developer may need to remove the default margin or maybe even increase it to taste.
+    </p>
+
+  </body>
+</html>

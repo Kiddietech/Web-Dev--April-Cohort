@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <style>
+            .btn {
+                padding: 10px 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 50px;
+                border-radius: 10px;
+                font-size: 40px;
+            }
+
+            .box {
+                padding: 20px;
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                clip-path: circle(50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn" onclick="
+        // Num = Num + 1;
+        //code on line 33 and 35 will do the same thing
+        // Num += 1;
+        Num++
+        display.textContent = Num;
+            ">
+            +
+        </button>
+        
+        <button class="btn" onclick="
+        // Num = Num - 1;
+        //code on line 43 and 45 will do the same thing
+        // Num -= 1;
+
+        // if (condition){
+        //     code runs only when condition is true
+        // }
+
+        if (Num > 0) {
+            Num--
+            display.textContent = Num;
+        }
+            ">
+            -
+        </button>
+
+        <div class="box"></div>
+
+        <script>
+
+            var display = document.querySelector('div'); 
+            var Num = 0;
+            display.textContent = Num;
+
+        </script>
+    </body>
+</html>

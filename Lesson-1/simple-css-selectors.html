@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+      main {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        color: red;
+      }
+
+      .header-1 {
+        color: blue;
+      }
+
+      #header-2 {
+        color: gray;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      div img {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>CSS selectors</h2>
+      <p>Simple CSS Selectors <br>A CSS selector selects the HTML element(s) you want to style. <br><br>Simple selectors include:</p>
+
+      <ol>
+        <li>element name</li>
+        <li>class selector</li>
+        <li>id selector</li>
+        <li>descendant selector</li>
+      </ol>
+
+      <h4>The elements below is styled using the selector methods mentioned above</h4>
+    </header>
+    
+    <!-- the main is styled using the element name method  -->
+    <main>
+      <h1>Styled using element name</h1>
+  
+      <h1  class="header-1">Styled using class</h1>
+  
+      <h1  id="header-2">Styled using id</h1>
+      
+      <p>The image below is styled using the element name</p>
+      
+      <img src="https://th.bing.com/th/id/OIP.Ce2m8qM-qT6o1vVpH-0OrAHaEo?rs=1&pid=ImgDetMain" alt="">
+  
+  
+      <p>The image below is styled using the descendant selector</p>
+  
+      <div>
+        <img src="https://th.bing.com/th/id/OIP.Ce2m8qM-qT6o1vVpH-0OrAHaEo?rs=1&pid=ImgDetMain" alt="">
+      </div>
+    </main>
+  </body>
+</html>

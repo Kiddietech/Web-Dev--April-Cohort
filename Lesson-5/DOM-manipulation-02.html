@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <style>
+            .btn {
+                padding: 10px 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 50px;
+            }
+            .box {
+                padding: 20px;
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                clip-path: circle(50%);
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn" onclick="
+            changeDivBG.style.background = 'blue';
+        // document.body.style.background = 'blue'
+            ">
+            click here
+        </button>
+
+        <div class="box" id="BOX"></div>
+        <div class="box" id="BOX"></div>
+        <div class="box" id="BOX"></div>
+
+
+        <script>
+            // var changeDivBG = document.getElementsByTagName('div');
+            // var changeDivBG = document.getElementsByClassName('box');
+            // var changeDivBG = document.getElementById('BOX');
+            var changeDivBG = document.querySelector('div');  
+            // changeDivBG.style.background = 'blue';
+        </script>
+    </body>
+</html>
